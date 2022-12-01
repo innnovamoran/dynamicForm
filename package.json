@@ -8,11 +8,14 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "start-mock-server":"json-server --watch ./mock/db.json"
+    "start-mock-server": "json-server --watch ./mock/db.json"
   },
   "dependencies": {
+    "@react-native-picker/picker": "^2.4.8",
     "react": "18.1.0",
-    "react-native": "0.70.6"
+    "react-native": "0.70.6",
+    "react-native-radio-buttons-group": "^2.2.11",
+    "react-native-uuid": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

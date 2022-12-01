@@ -1,9 +1,87 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+  "feature-structure": [
+    {
+      "id": 20,
+      "label": "Uso del vehículo",
+      "type": "select",
+      "options": [
+        {"id": 0, "value": "seleccione una opción"},
+        {"id": 300, "value": "Form300-20"},
+        {"id": 301, "value": "Form301-20"},
+        {"id": 302, "value": "Form302-20"}
+      ]
+    },
+    {
+      "id": 9000,
+      "label": "Tipo de combustible",
+      "type": "select",
+      "options": [
+        {"id": 0, "value": "seleccione una opción"},
+        {"id": 600, "value": "Form600-9000", "label": ""},
+        {"id": 601, "value": "Form601-9000", "label": ""},
+        {"id": 602, "value": "Form602-9000", "label": ""}
+      ]
+    },
+    {
+      "id": 9001,
+      "label": "Mercado de adquisición",
+      "type": "select",
+      "options": [
+        {"id": 0, "value": "seleccione una opción"},
+        {"id": 400, "value": "Form400-9001"},
+        {"id": 401, "value": "Form401-9000"},
+        {"id": 402, "value": "Form402-9001"}
+      ]
+    }
+  ],
+  "feature-sub-structure": {
+    "Form600-9000": [
+      {
+        "id": 4000,
+        "label": "select400-9001",
+        "type": "select",
+        "options": [
+          {"id": 0, "value": "seleccione una opción"},
+          {"id": 5001, "value": "Form5001-4000", "label": ""},
+          {"id": 5002, "value": "Form5002-4000", "label": ""},
+          {"id": 5003, "value": "Form5003-4000", "label": ""}
+        ]
+      },
+      {
+        "id": 40001,
+        "label": "rb400-9001",
+        "type": "radiobuttons",
+        "options": [
+          {"id": 5001, "value": "Si-4000", "label": "Si-4000"},
+          {"id": 5002, "value": "No-4000", "label": "No-4000"}
+        ]
+      },
+      {
+        "id": 40002,
+        "label": "Input400-9001",
+        "type": "input",
+        "options": []
+      }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+    "Si-4000": [
+      {
+        "id": 7000,
+        "label": "Input700-4000",
+        "type": "input",
+        "options": []
+      },
+      {
+        "id": 7001,
+        "label": "Input701-4000",
+        "type": "input",
+        "options": []
+      },
+      {
+        "id": 7002,
+        "label": "Input702-4000",
+        "type": "input",
+        "options": []
+      }
+    ]
   }
+}
